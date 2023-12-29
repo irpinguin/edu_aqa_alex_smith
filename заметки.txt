@@ -1,0 +1,118 @@
+Alex Smith.Тестирование ПО Автоматизация и программирование.120491
+
+'''
+    Потом добавь два случайно выбранных товара в корзину (через программное нажатие на кнопку "Add to cart"). Перед добавлением в корзину следующего товара проверь, что он не совпадает с уже добавленным. В случае совпадения выбери следующий случайный товар. Используй поиск элементов по XPath. Название и цену добавленных товаров запомни в соответствующих переменных.
+'''
+
+---------
+
+# Находим все элементы товаров на странице
+product_elements = driver.find_elements(By.CLASS_NAME, 'inventory_item')
+
+# Проходимся по каждому товару и извлекаем информацию
+for product_element in product_elements:
+
+    # Название товара
+    product_name = product_element.find_element(By.CLASS_NAME, 'inventory_item_name').text
+
+    # Цена товара
+    product_price = float(product_element.find_element(By.CLASS_NAME, 'inventory_item_price').text.strip('$'))
+
+    # XPath для кнопки добавления товара
+    add_to_cart_btn = product_element.find_element(By.TAG_NAME, 'button').get_attribute('id')
+
+    # Создаем словарь с информацией о товаре и добавляем его в список
+    product_info = {
+        'name': product_name,
+        'price': product_price,
+        'btn_id': add_to_cart_btn
+    }
+    products.append(product_info)
+
+
+selected_products = [{'name': 'Sauce Labs Backpack', 'price': 29.99, 'btn_id': 'add-to-cart-sauce-labs-backpack'}, {'name': 'Sauce Labs Onesie', 'price': 7.99, 'btn_id': 'add-to-cart-sauce-labs-onesie'}]
+
+cart_products = [{'name': 'Sauce Labs Backpack', 'price': 29.99}, {'name': 'Sauce Labs Onesie', 'price': 7.99}]
+
+
+# Пример данных
+selected_products = [{'name': 'Sauce Labs Backpack', 'price': 29.99, 'btn_id': 'add-to-cart-sauce-labs-backpack'}, {'name': 'Sauce Labs Onesie', 'price': 7.99, 'btn_id': 'add-to-cart-sauce-labs-onesie'}]
+cart_products = [{'name': 'Sauce Labs Backpack', 'price': 29.99}, {'name': 'Sauce Labs Onesie', 'price': 7.99}]
+
+# Создаем множества для хранения имен и цен в выбранных товарах
+selected_names = set(product['name'] for product in selected_products)
+selected_prices = set(product['price'] for product in selected_products)
+
+# Создаем множества для хранения имен и цен в товарах в корзине
+cart_names = set(product['name'] for product in cart_products)
+cart_prices = set(product['price'] for product in cart_products)
+
+# Проверяем идентичность имен и цен в выбранных товарах и товарах в корзине
+if selected_names == cart_names and selected_prices == cart_prices:
+    print("Имена и цены в выбранных товарах и товарах в корзине идентичны.")
+else:
+    print("Имена и/или цены в выбранных товарах и товарах в корзине не идентичны.")
+
+
+---
+​
+Если при запуске появляется предупреждение: 
+
+PytestUnknownMarkWarning: Unknown pytest.mark.run - is this a typo?  You
+can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+
+и скрипт не отрабатывает, то нужно в текущей директории (например, там где хранятся тесты) создать файл pytest.ini и в нем поместить текст
+
+[pytest]
+markers =
+    run: Run the test functions or type what you need
+
+Спасибо @Дарья_Симакова в комментарии ниже за отсылку к книге. Нашел решение тут https://habr.com/ru/articles/448796/
+
+​
+
+---
+https://t.me/aqa_python/487
+
+Прописывайте типы в своём коде, тогда подсказки будут работать
+Например
+def find(self, locator: Tuple[str, str], timeout: int = None) -> WebElement:
+    return WebDriverWait(driver=self.driver, timeout=timeout).until(
+        EC.presence_of_element_located(locator)
+    )
+
+---
+https://t.me/comments_qa4/2006
+Вопрос из чата https://t.me/aqa_python вдохновил написать этот пост, думаю многим будет полезно)
+
+⏳ Проблематика: Нам необходимо проверить какое-то количество страниц на доступность, сделать healthcheck-тест!
+
+❓Встает вопрос, как это сделать быстро? 
+
+🟢Один из вариантов, это использовать библиотеку requests + pytest! 
+
+1. Мы помещаем все urls в файл (Скриншот 1)
+2. Пишем тест (Скриншот 2)
+
+👌 На скриншоте я описал простой параметризированный healthcheck-тест (из него мы получим по тесту на каждый URL). 
+
+По комментариям в коде думаю все будет понятно)
+
+P.S. Это лишь пример, глубина валидации может быть другой в зависимости от ваших целей!
+
+
+---
+https://t.me/aqa_python/619
+@pytest.fixture(scope="function", autouse=True)
+def chrome_driver(request):
+    options = Options()
+    # options.add_argument("--headless")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--window-size=1920,1080")
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_experimental_option('excludeSwitches', ['enable-logging'])
+    driver = webdriver.Chrome(options=options)
+    request.cls.chrome_driver = driver
+    yield driver
+    driver.quit()

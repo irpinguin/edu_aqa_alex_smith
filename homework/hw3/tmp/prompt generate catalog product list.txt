@@ -1,0 +1,179 @@
+Есть код элемента
+
+<div class="row" id="page-1">
+<div class="catalog-element-container col-xs-6 col-sm-4 col-md-3 col-lg-2">
+    <div class="catalog-element catalog-element-grid">
+        <div class="image">
+            <a href="/cat/i376391/">
+                <img alt="Тыква 4 сезона нарезанная, замороженная (400 г)" class="img-responsive center-block lazy loaded" data-ll-status="loaded" src="https://irmag.ru/media/cache/catalog_elements/uploads/files/2023/08/09/863e4d6f60e7c4da0189e65cf08584981ec6d63c.jpeg">
+            </a>
+            <div class="props">
+                <i class="prop-special-price fa fa-fw" title="Товар с <b>максимально сниженной ценой</b>. Скидки не распространяются." data-toggle="tooltip" data-html="true"></i>
+            </div>
+            <a href="/action/gastronomiia-doma-produkty-na-kazhdyi-den-po-vygodnym-tsenam/" class="sticker sticker-1" style="background-image: url('/uploads/files/2023/10/13/07744ee86c814268280b54ebff91213fa9b6e24c.png');" title="" data-toggle="tooltip" data-html="true" data-original-title="Этот товар участвует в акции:<br><b>&quot;Гастрономия дома! Продукты на каждый день по выгодным ценам&quot;</b>">
+            </a>
+            </div>
+
+        <div id="action-element-name" class="name position-if-has-unit-price">
+            <a href="/cat/i376391/">
+                Тыква 4 сезона нарезанная, замороженная (400 г)
+            </a>
+        </div>
+
+        <div class="btns">
+            <div class="btn-group bottom-space-for-unit-price">
+                <a class="add-element-to-basket btn add-to-basket-border-radius btn-primary" onclick="
+                if (typeof _tmr !== 'undefined') {
+                    _tmr.push({ 
+                        type: 'reachGoal',
+                        id: '3302606', 
+                        value: '146', 
+                        goal: 'AddToBasket', 
+                        params: {product_id: '376391'} 
+                    });
+                };
+            " data-element-id="376391"><i class="btn-icon fa fa-lg fa-fw"></i><span class="price-old">
+                        146.00
+                    </span><span class="price">
+                        90.00
+                        <i class="fa fa-rub"></i></span></a>
+                    <a class="btn btn-warning add-element-to-favorite" data-element-id="376391"><i class="fa fa-lg fa-fw fa-star-o" data-toggle="tooltip" data-placement="bottom" title="Добавить в избранное"></i></a>
+                            </div>
+        </div>
+    </div>
+</div>
+                    
+
+<div class="catalog-element-container col-xs-6 col-sm-4 col-md-3 col-lg-2">
+    <div class="catalog-element catalog-element-grid">
+        <div class="image">
+            <a href="/cat/i273075/">
+                <img alt="Овощная смесь 4 сезона по-деревенски быстрозамороженная (400 г)" class="img-responsive center-block lazy loaded" data-ll-status="loaded" src="https://irmag.ru/media/cache/catalog_elements/uploads/files/2023/07/03/31733b6ccd4a6add2885eec23b09dc8eafb9e9ed.jpeg">
+            </a>         
+            <div class="props">
+            </div>
+
+        </div>
+        <div id="action-element-name" class="name position-if-has-unit-price" style="height: 60px;">
+            <a href="/cat/i273075/">
+                Овощная смесь 4 сезона по-деревенски быстрозамороженная (400 г)
+            </a>
+        </div>
+        <div class="btns">
+            <div class="btn-group bottom-space-for-unit-price">
+                                                        <a class="add-element-to-basket btn add-to-basket-border-radius btn-primary" onclick="
+                if (typeof _tmr !== 'undefined') {
+                    _tmr.push({ 
+                        type: 'reachGoal',
+                        id: '3302606', 
+                        value: '163', 
+                        goal: 'AddToBasket', 
+                        params: {product_id: '273075'} 
+                    });
+                };
+            " data-element-id="273075"><i class="btn-icon fa fa-lg fa-fw"></i>
+                                                                163.00
+                    <i class="fa fa-rub"></i></a>
+                    <a class="btn btn-warning add-element-to-favorite" data-element-id="273075"><i class="fa fa-lg fa-fw fa-star-o" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Добавить в избранное"></i></a>
+                            </div>
+        </div>
+    </div>
+</div>
+                    
+
+<div class="catalog-element-container col-xs-6 col-sm-4 col-md-3 col-lg-2">
+    <div class="catalog-element catalog-element-grid">
+        <div class="image">
+            <a href="/cat/i273076/">
+                <img alt="Овощная смесь 4 сезона мексиканская быстрозамороженная (400 г)" class="img-responsive center-block lazy loaded" data-ll-status="loaded" src="https://irmag.ru/media/cache/catalog_elements/uploads/files/2023/07/03/06101829ab7a5c8b47e0560a3470f1e758fc82e0.jpeg">
+            </a>
+            <div class="props">
+            </div>
+        </div>
+        <div id="action-element-name" class="name position-if-has-unit-price" style="height: 60px;">
+            <a href="/cat/i273076/">
+                Овощная смесь 4 сезона мексиканская быстрозамороженная (400 г)
+                            </a>
+        </div>
+        <div class="btns">
+            <div class="btn-group bottom-space-for-unit-price">
+                                                        <a class="add-element-to-basket btn add-to-basket-border-radius btn-primary" onclick="
+                if (typeof _tmr !== 'undefined') {
+                    _tmr.push({ 
+                        type: 'reachGoal',
+                        id: '3302606', 
+                        value: '192', 
+                        goal: 'AddToBasket', 
+                        params: {product_id: '273076'} 
+                    });
+                };
+            " data-element-id="273076"><i class="btn-icon fa fa-lg fa-fw"></i>
+                                                                192.00
+                    <i class="fa fa-rub"></i></a>
+                    <a class="btn btn-warning add-element-to-favorite" data-element-id="273076"><i class="fa fa-lg fa-fw fa-star-o" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Добавить в избранное"></i></a>
+                            </div>
+        </div>
+    </div>
+</div>
+                    
+
+<div class="catalog-element-container col-xs-6 col-sm-4 col-md-3 col-lg-2">
+    <div class="catalog-element catalog-element-grid">
+        <div class="image">
+            <a href="/cat/i273079/">
+                <img alt="Овощная смесь 4 сезона гавайская быстрозамороженная (400 г)" class="img-responsive center-block lazy loaded" data-ll-status="loaded" src="https://irmag.ru/media/cache/catalog_elements/uploads/files/2023/07/03/43f21c37451613e9c51703a6ebc3102c75c8a9fb.jpeg">
+            </a>         
+            <div class="props">
+            </div>
+
+         </div>
+        <div id="action-element-name" class="name position-if-has-unit-price" style="height: 60px;">
+            <a href="/cat/i273079/">
+                Овощная смесь 4 сезона гавайская быстрозамороженная (400 г)
+                            </a>
+        </div>
+        <div class="btns">
+            <div class="btn-group bottom-space-for-unit-price">
+                                                        <a class="add-element-to-basket btn add-to-basket-border-radius btn-primary" onclick="
+                if (typeof _tmr !== 'undefined') {
+                    _tmr.push({ 
+                        type: 'reachGoal',
+                        id: '3302606', 
+                        value: '180', 
+                        goal: 'AddToBasket', 
+                        params: {product_id: '273079'} 
+                    });
+                };
+            " data-element-id="273079"><i class="btn-icon fa fa-lg fa-fw"></i>
+                                                                180.00
+                    <i class="fa fa-rub"></i></a>
+                    <a class="btn btn-warning add-element-to-favorite" data-element-id="273079"><i class="fa fa-lg fa-fw fa-star-o" data-toggle="tooltip" data-placement="bottom" title="Добавить в избранное"></i></a>
+                            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+при помощи селениум создай датафрейм пандас с полями:
+id: значения по XPath //div[@id="catalog-content"]/div[3]/div/div/div[@class="btns"]/div/a атрибут data-element-id
+
+name: значения по XPath //div[@id="catalog-content"]/div[3]/div/div/div[@id="action-element-name"]/a
+
+manufacturer 
+brand (XPath
+country (XPath
+price (XPath
+price_action
+color
+novelty
+rating
+weight
+volume
+reviews
+action_flag
+price_spec_flag
+eco_flag
+etick_flag
+transfer_flag
+CZ_flag
+BZMZ-flag
